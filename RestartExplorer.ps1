@@ -7,6 +7,7 @@ taskkill /F /IM explorer.exe
 
 for ($i = 0; $i -lt $path_arr.Length; $i++) {
     Invoke-Expression $path_arr[$i]
+    Start-Sleep 0.5
 }
 
 explorer.exe
